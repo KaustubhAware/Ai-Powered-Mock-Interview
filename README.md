@@ -1,4 +1,4 @@
-# MockerX - AI-Powered Mock Interview Platform
+# Ai-Powered-Mock-Interview-
 
 🎯 Mock Interview Web App
 This is a full-featured Mock Interview System built with HTML, CSS, JavaScript, PHP, and MySQL. It simulates real interview environments using webcam, microphone, AI-based evaluation, and speech-to-text conversion. The system helps users practice job-specific interview questions and receive feedback instantly.

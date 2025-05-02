@@ -1,0 +1,5 @@
+<?php
+return[
+    'GEMINI_API_KEY'=>"PASTE YOUR API KEY HERE"
+];
+?>

@@ -1,0 +1,124 @@
+/* Main Container: Flexbox Layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Left Section */
+.left-section {
+    width: 50%;
+    text-align: left;
+}
+
+/* Right Section */
+.right-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Job Details */
+.job-details {
+    background: #f3f3f3;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.job-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Info Box */
+.info-box {
+    background: #fff7cd;
+    padding: 15px;
+    border: 2px solid #ffcc00;
+    text-align: left;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Webcam Container */
+.webcam-container {
+    width: 100%;
+    background: #f3f3f3;
+    margin-top: 50px;
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webcam-box {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    background: #ececec;
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.webcam-icon {
+    width: 80px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+    background: black; 
+    transform: scaleX(-1); /* Mirror Effect */
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.gray-btn {
+    width: 300px;
+    background-color: #e0e0e0;
+    color: black;
+}
+.gray-btn:hover {
+    background-color: #9b9ea0;
+    /* transform: scale(1.1); */
+}
+
+.purple-btn {
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 250px;
+    background-color: #5a4fcf;
+    color: white;
+    transform: translateX(-50px) ;
+}
+
+.purple-btn:hover {
+    background-color: #4a3fba;  
+}

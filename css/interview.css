@@ -1,0 +1,269 @@
+ /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  */
+
+
+    
+    .container {
+        display: flex;
+        background: white;
+        border-radius:  15px ;
+        justify-content: space-between;
+        padding: 20px;
+        height: 70%;
+        max-width: 1000px;
+        margin: auto;
+        transform: translateY(30px);
+    }
+    
+    .question-section {
+        width: 60%;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .question-tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .tab {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px;
+        background-color: #e0e0e0;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .tab:hover {
+        background-color: #d6d6d6;
+        /* font-weight: bold !important; */
+        box-shadow: 0px 0px 10px 2px  #d3d3d3!important;
+    }
+    
+    .active-tab {
+        background-color: #385df3 !important;
+        color: white !important;
+        font-weight: bold !important;
+        box-shadow: 0px 0px 10px 2px rgba(62, 92, 227, 0.8) !important;
+    }
+    
+    /* .question-box {
+        height: 200px;
+        background-color: #e7e7ff;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    } */
+    .question-box {
+        min-height: 200px; /* Minimum height, can expand */
+        background-color: #e7e7ff;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        overflow: hidden; /* Prevents content overflow */
+    }
+    
+    
+    .audio-icon {
+        border: none;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    /* .note {
+        background-color: #eef4ff;
+        height: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #555;
+        margin-top: 50px;
+        border-left: 5px solid #5a3ec8;
+    } */
+    .note {
+        background-color: #eef4ff;
+        min-height: 150px; /* Ensures minimum height */
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #555;
+        margin-top: 50px;
+        border-left: 5px solid #5a3ec8;
+        line-height: 1.5; /* Improves readability for longer text */
+    }
+    
+    
+    .webcam-section {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    
+    .webcam-box {
+        background: black;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    
+    .webcam-box video {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: none; /* Initially hidden */
+        transform: scaleX(-1); 
+    }
+    
+    /* Hide webcam placeholder when video is active */
+    .webcam-box img {
+        width: 80px;
+    }
+    
+    .record-button,
+    .show-answer-button,
+    .typeAnswerBtn
+     {
+        width: 40%;
+        padding: 10px;
+        margin-top: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    .record-button,.typeAnswerBtn {
+        background-color: #dcdcdc;
+        transition: 0.3s;
+    }
+    
+    .record-button:hover,
+    .typeAnswerBtn:hover {
+        background-color: #cfcfcf;
+        font-weight: bold !important;
+        box-shadow: 0px 0px 10px 2px #d3d3d3 !important;
+    }
+    
+    /* Change button color when recording */
+    .recording {
+        background-color: red !important;
+        color: white !important;
+    }
+    
+    /* Show Answer button */
+    .show-answer-button {
+        background-color: #5a3ec8;
+        color: white;
+    }
+    
+    .show-answer-button:hover {
+        background-color: #3f2ea8;
+    }
+    
+    /* Recorded answer text */
+    #userAnswerText {
+        display: none;
+        font-size: 18px;
+        color: #333;
+        padding: 10px;
+        background: #e7e7ff;
+        border-radius: 8px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+  
+
+
+.question-section {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tab {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.tab:hover {
+    background-color: #d6d6d6;
+}
+
+.active-tab {
+    background-color: #385df3 !important;
+    color: white !important;
+    font-weight: bold !important;
+    box-shadow: 0px 0px 10px 2px rgba(62, 92, 227, 0.8) !important;
+}
+
+.question-box {
+    height: 200px;
+    background-color: #e7e7ff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.record-button.recording {
+    background-color: red !important;
+    color: white !important;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-state {
+    width: 40%;
+    padding: 10px 0;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+}
+.btn-state:hover {
+    background-color: #385df3 !important;
+    color: white !important;
+    font-weight: bold !important;
+    box-shadow: 0px 0px 10px 2px rgba(62, 92, 227, 0.8) !important;
+}
